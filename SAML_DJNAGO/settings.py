@@ -86,18 +86,17 @@ SAML_SETTINGS = {
   "idp": {
     "entityId": "dev-client-saml",
     "singleSignOnService": {
-      "url": "https://keycloak-qa.solyticspartners.com/realms/SAML_TEST/protocol/saml",
+      "url": "<your-keycloak-domain>/realms/<your-realm>/protocol/saml",
       "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
     },
-    "x509cert": "MIICoTCCAYkCBgGSJP/BQjANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDDAlTQU1MX1RFU1QwHhcNMjQwOTI0MTcwNDUzWhcNMzQwOTI0MTcwNjMzWjAUMRIwEAYDVQQDDAlTQU1MX1RFU1QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDlyI58EXktoFfSvfWMjimsm29OAfU19EyLn4D7tzGOwi43vCNr7Kl1dkD9CenoNOZg7Qbhrlosq5RENG1IWTox5ZebxTcMHQon+eKNsex1IFw3thNmrj48S0rvi21BYR35yJcMzyKSY4+7JTe+6vL0xJJAHNkiQ6cnTb7vu9m75GXLvOXg0gr6AoBUM2lPBtaZvJSxceX1vqYbwr1nxivi4sSGRGuOMakWacocT4wSY0TBiq70UssKAQZduSJCT2GxrGH/++y7rR6pumk+h+oF1oTxan2Rk3mP8garT1FTOZeCBfSOF39WYDIpW+BVPNXKISHEoFBOo8mxoTvPM0e7AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAI7wRkUcgkdY2MV37xIfKIETnb0S8danqB1NJ1rPuCa+sDpGlprlyYYSpay8ATjLdZlPdMcTO/kh3C8hWTSnfJ7rVcnNM2lilTJUmPBxTQluekfVWZmf/odx++eQ0/Qtrd7pnbdLhKNHBcQdclH0bQEawE/vHp++3Xi86WKS3mQqbJTK8I9Zq7JsGL3x0PWRMJpFFTOV0dS7hCyAtsP54lCsPUN7UyOatZt1LjXysQymSL0AhYKENJT79t6/OLshUjQH6DNYBPDM1vR2r127USZrI60NSWFggQ+likJPljlNAFLLu3cS/TcpucZ4KmQKQJJ3ES9lwEY3+BGnUaIH2SA="
+    "x509cert": "<your-realm-RSA256-certificate>"
   },
   "sp": {
     "entityId": "dev-client-saml",
     "assertionConsumerService": {
-      "url": "https://6cf6-119-252-222-138.ngrok-free.app/api/saml/callback/",
+      "url": "your-app-domain/api/saml/callback/",
       "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"   
     },
-    # "x509cert": "MIICoTCCAYkCBgGSJP/BQjANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDDAlTQU1MX1RFU1QwHhcNMjQwOTI0MTcwNDUzWhcNMzQwOTI0MTcwNjMzWjAUMRIwEAYDVQQDDAlTQU1MX1RFU1QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDlyI58EXktoFfSvfWMjimsm29OAfU19EyLn4D7tzGOwi43vCNr7Kl1dkD9CenoNOZg7Qbhrlosq5RENG1IWTox5ZebxTcMHQon+eKNsex1IFw3thNmrj48S0rvi21BYR35yJcMzyKSY4+7JTe+6vL0xJJAHNkiQ6cnTb7vu9m75GXLvOXg0gr6AoBUM2lPBtaZvJSxceX1vqYbwr1nxivi4sSGRGuOMakWacocT4wSY0TBiq70UssKAQZduSJCT2GxrGH/++y7rR6pumk+h+oF1oTxan2Rk3mP8garT1FTOZeCBfSOF39WYDIpW+BVPNXKISHEoFBOo8mxoTvPM0e7AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAI7wRkUcgkdY2MV37xIfKIETnb0S8danqB1NJ1rPuCa+sDpGlprlyYYSpay8ATjLdZlPdMcTO/kh3C8hWTSnfJ7rVcnNM2lilTJUmPBxTQluekfVWZmf/odx++eQ0/Qtrd7pnbdLhKNHBcQdclH0bQEawE/vHp++3Xi86WKS3mQqbJTK8I9Zq7JsGL3x0PWRMJpFFTOV0dS7hCyAtsP54lCsPUN7UyOatZt1LjXysQymSL0AhYKENJT79t6/OLshUjQH6DNYBPDM1vR2r127USZrI60NSWFggQ+likJPljlNAFLLu3cS/TcpucZ4KmQKQJJ3ES9lwEY3+BGnUaIH2SA=",
   }
 }
 
