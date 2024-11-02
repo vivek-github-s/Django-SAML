@@ -1,5 +1,3 @@
-# saml_views.py
-
 from django.shortcuts import redirect
 from django.http import JsonResponse
 from onelogin.saml2.auth import OneLogin_Saml2_Auth
