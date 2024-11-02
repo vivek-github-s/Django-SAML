@@ -6,6 +6,7 @@ SAML authentication with Keycloak as the IdP
 Middleware for checking SSO authentication on each request
 Single Logout (SLO) support
 Flexible SAML configuration for production and development
+
 Requirements
 Python 3.x
 Django 3.x or higher
