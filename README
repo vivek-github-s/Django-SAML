@@ -11,3 +11,5 @@ Requirements
 Python 3.x
 Django 3.x or higher
 python3-saml library for SAML support
+
+refer https://medium.com/@vivekzs440/setup-sso-using-saml-in-django-using-keycloak-as-idp-b2b5d81c3534 for end to end setup
