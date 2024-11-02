@@ -1,1 +1,12 @@
-This projects provides you information to integrate Django wiht keycloak using SAML protocol
+Django SAML Integration with Keycloak
+This project demonstrates how to integrate SAML-based Single Sign-On (SSO) in a Django application using Keycloak as the Identity Provider (IdP). This setup allows users to log in through Keycloak, establishing an SSO session, and access multiple endpoints within your application.
+
+Features
+SAML authentication with Keycloak as the IdP
+Middleware for checking SSO authentication on each request
+Single Logout (SLO) support
+Flexible SAML configuration for production and development
+Requirements
+Python 3.x
+Django 3.x or higher
+python3-saml library for SAML support
